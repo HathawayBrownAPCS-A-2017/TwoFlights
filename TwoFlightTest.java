@@ -8,9 +8,10 @@ public class TwoFlightTest
         Flight firstFlight = new Flight ("United", "275", 
             new Time (15, 23), new Time (17, 34), "CLE", "SFO");
             
-        Flight secondFlight = new Flight ("United". "4723",
+        Flight secondFlight = new Flight ("United", "4723",
             new Time (18, 46), new Time (23, 59), "SFO", "AUK");
             
         TwoFlightTrip myItinerary = new TwoFlightTrip (firstFlight, secondFlight);
         System.out.println (myItinerary);
+    }
 }

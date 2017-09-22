@@ -1,12 +1,12 @@
 
 public class Flight {
 		
-		String airline1;
-		String flightNum;
-		Time depTime;
-		Time arrTime;
-		String depCity;
-		String arrCity;
+		private String airline1;
+		private String flightNum;
+		private Time depTime;
+		private Time arrTime;
+		private String depCity;
+		private String arrCity;
 		
 		public Flight(String a, String num, Time depT, Time arrT, String depC, String arrC) {
 			airline1 = a;
@@ -18,16 +18,17 @@ public class Flight {
 		}
 		
 		public String toString(){
-			return airline1 + "flight " + flightNum + "\n Dep"
-			+ depCity + depTime.toString() + arrCity + arrTime.toString();
+			return airline1 + "flight " + flightNum + 
+			   "\n Depart " + depCity + depTime.toString() + 
+			   "\n Arrive " + arrCity + arrTime.toString();
 		}
 		
-		public String getDepTime() {
-			return depTime.toString();
+		public Time getDepTime() {
+			return depTime;
 		}
 		
-		public String getArrTime() {
-			return arrTime.toString();
+		public Time getArrTime() {
+			return arrTime;
 		}
 		
 	}

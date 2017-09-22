@@ -21,9 +21,9 @@ public class TwoFlightTrip
         Time t2 = flight2.getDepTime();
         Time layover = (t1.elapsedTime (t2));
         
-        return (flight1.toString()) + "\n\n" +
-        "Layover" + layover.toString() + "\n\n" +
-        flight2.toString();
+        return flight1.toString() + "\n\n" +
+               "Layover" + layover.toString() + "\n\n" +
+               flight2.toString();
         
     }
     
